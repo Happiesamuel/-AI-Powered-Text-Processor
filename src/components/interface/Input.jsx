@@ -10,7 +10,7 @@ import SpeechRecognition, {
 } from "react-speech-recognition";
 
 function Input() {
-  const { messages, dispatch } = useChat();
+  const { dispatch } = useChat();
   const { transcript, listening, resetTranscript } = useSpeechRecognition();
   const [val, setVal] = useState(transcript || "");
   const [dect, setDect] = useState("");
@@ -45,6 +45,7 @@ function Input() {
   };
 
   function handleSubmit() {
+    if (!val) return;
     const data = {
       date: new Date(),
       message: val,

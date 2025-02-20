@@ -8,6 +8,11 @@ function reducer(state, action) {
         ...state,
         messages: [...state.messages, action.payload],
       };
+    case "new":
+      return {
+        ...state,
+        messages: [],
+      };
     default:
       return { ...state };
   }
