@@ -65,7 +65,7 @@ function MessageList({ mess }) {
   return (
     <div className="flex flex-col gap-3">
       <div className="w-full flex justify-end">
-        <div className="flex flex-col max-w-[85%] md:max-w-[60%] w-max  p-3 rounded-2xl text-zinc-100 bg-[#414158]">
+        <div className="flex flex-col max-w-[85%] md:max-w-[60%] w-fit  p-3 rounded-2xl text-zinc-100 bg-[#414158]">
           <h3 className="text-base">{sum}</h3>
           <div className="flex justify-end gap-5 text-sm text-zinc-300">
             <p>Language: {mess.detection}</p>
