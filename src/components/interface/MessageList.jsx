@@ -114,7 +114,7 @@ function MessageList({ mess }) {
         </div>
       </div>
       <div className="w-full flex justify-start">
-        <div className="flex flex-col max-w-[85%] md:max-w-[60%] w-max  bg-transparent">
+        <div className="flex flex-col max-w-[85%] md:max-w-[60%] w-fit  bg-transparent">
           {load && <BeatLoader size={10} color="#71717b" />}
           {val !== "en" && translate && (
             <div className="flex items-start  gap-3  w-fit p-3  text-zinc-100 bg-[#414158/40">
