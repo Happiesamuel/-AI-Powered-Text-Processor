@@ -55,7 +55,7 @@ function Input() {
     setVal("");
   }
   return (
-    <div className="flex w-full   flex-col bg-[#404045] rounded-[30px] px-4 p-3 shadow-2xl shadow-zinc-900">
+    <div className="flex md:w-[80%]   flex-col bg-[#404045] rounded-[30px] px-4 p-3 shadow-2xl shadow-zinc-900">
       <Textarea
         value={val}
         onChange={(e) => setVal(e.target.value)}
